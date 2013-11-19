@@ -1,0 +1,3 @@
+[submodule "dotfiles_installer"]
+	path = dotfiles_installer
+	url = https://github.com/amacd31/dotfiles_installer.git
