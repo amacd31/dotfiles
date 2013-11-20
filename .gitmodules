@@ -1,3 +1,12 @@
 [submodule "dotfiles_installer"]
 	path = dotfiles_installer
 	url = https://github.com/amacd31/dotfiles_installer.git
+[submodule "vim/bundle/vim-fugitive"]
+	path = vim/bundle/vim-fugitive
+	url = git://github.com/tpope/vim-fugitive.git
+[submodule "vim/bundle/vim-git"]
+	path = vim/bundle/vim-git
+	url = git://github.com/tpope/vim-git.git
+[submodule "vim/bundle/vim-json"]
+	path = vim/bundle/vim-json
+	url = git://github.com/jakar/vim-json.git
