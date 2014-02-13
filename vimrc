@@ -37,3 +37,4 @@ nnoremap <space> za
 " Create new fold from visual block
 vnoremap <space> zf " Doesn't work with foldmethod=indent
 
+autocmd Syntax python normal zR
