@@ -12,7 +12,7 @@ set shiftwidth=4 " unify
 set tabstop=4 " real tabs should be 4, but they will show with set list on
 set expandtab
 "set copyindent " but above all -- follow the conventions laid before us
-"filetype plugin indent on " load filetype plugins and indent settings
+filetype plugin indent on " load filetype plugins and indent settings
 
 " have <Tab> (and <Shift>+<Tab> where it works) change the level of
 " indentation:
@@ -30,4 +30,9 @@ if &diff
 endif
 
 set number
+
+" Open/Close fold when hitting space
+nnoremap <space> za
+" Create new fold from visual block
+vnoremap <space> zf " Doesn't work with foldmethod=indent
 
