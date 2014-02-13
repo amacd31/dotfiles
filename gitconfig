@@ -1,0 +1,15 @@
+# Requires git >= v1.7.10 to use includes.
+[include]
+    # Include user configuration from .gituser
+    # i.e. user.name and user.email
+    path = .gituser
+[color]
+    ui = true
+[alias]
+    ls = ls-files
+    wdiff = diff --color-words
+    pdiff = diff --patience
+[merge]
+    tool = vimdiff
+[achievement]
+    autocommit = true
