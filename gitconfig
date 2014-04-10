@@ -7,6 +7,8 @@
     ui = true
 [alias]
     ls = ls-files
+    st = status
+    dc = diff --cached
     wdiff = diff --color-words
     pdiff = diff --patience
 [merge]
