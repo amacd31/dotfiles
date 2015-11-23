@@ -49,3 +49,11 @@ if [ -f ~/.profile ]; then
 	. ~/.profile
 fi
 
+
+# added by Anaconda3 2.2.0 installer
+export PATH="/Users/amacdon/anaconda/bin:$PATH"
+
+alias such=git
+alias very=git
+alias much=git
+alias wow='git status'
