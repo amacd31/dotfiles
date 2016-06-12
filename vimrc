@@ -40,3 +40,4 @@ vnoremap <space> zf " Doesn't work with foldmethod=indent
 autocmd Syntax python normal zR
 
 autocmd FileType gitcommit setlocal spell
+autocmd FileType tex setlocal spell
