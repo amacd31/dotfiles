@@ -13,3 +13,6 @@
 [submodule "vim/bundle/vim-ansible-yaml"]
 	path = vim/bundle/vim-ansible-yaml
 	url = git://github.com/chase/vim-ansible-yaml.git
+[submodule "vim/bundle/neomake"]
+	path = vim/bundle/neomake
+	url = git@github.com:neomake/neomake.git
