@@ -41,3 +41,4 @@ autocmd Syntax python normal zR
 
 autocmd FileType gitcommit setlocal spell
 autocmd FileType tex setlocal spell
+autocmd FileType rst setlocal spell
