@@ -27,7 +27,7 @@ parse_git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
 }
 # Set shell prompt to list current git branch
-PS1="[\u@\H \W\$(parse_git_branch)]$ "
+PS1="[\u@\h \[$(tput bold)\]\[$(tput setaf 4)\]\W\[$(tput setaf 2)\]\$(parse_git_branch)\[$(tput sgr0)\]]\$ "
 
 # User specific environment and startup programs
 # For personally compiled binaries
