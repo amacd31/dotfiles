@@ -24,10 +24,17 @@ inoremap <S-Tab> <C-D>
 set list listchars=tab:>-,trail:.
 
 set t_Co=256
+" Fallback is use the desert256 scheme if the base16 config below doesn't run
 colorscheme desert256
 
 if &diff
     colorscheme desert256
+endif
+
+" Attempt to load base16 color scheme as set in ~/.vimrc_background
+if filereadable(expand("~/.vimrc_background"))
+    let base16colorspace=256
+    source ~/.vimrc_background
 endif
 
 set number
