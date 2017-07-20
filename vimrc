@@ -13,6 +13,7 @@ set tabstop=4 " real tabs should be 4, but they will show with set list on
 set expandtab
 "set copyindent " but above all -- follow the conventions laid before us
 filetype plugin indent on " load filetype plugins and indent settings
+" Turn syntax highlighting on
 syntax on
 
 " have <Tab> (and <Shift>+<Tab> where it works) change the level of
@@ -27,6 +28,7 @@ set t_Co=256
 " Fallback is use the desert256 scheme if the base16 config below doesn't run
 colorscheme desert256
 
+" Apply desert256 color scheme when using vimdiff
 if &diff
     colorscheme desert256
 endif
@@ -37,6 +39,7 @@ if filereadable(expand("~/.vimrc_background"))
     source ~/.vimrc_background
 endif
 
+" Show line numbers along left of window
 set number
 
 " Open/Close fold when hitting space
@@ -44,8 +47,10 @@ nnoremap <space> za
 " Create new fold from visual block
 vnoremap <space> zf " Doesn't work with foldmethod=indent
 
+" Open all folds for Python syntax files
 autocmd Syntax python normal zR
 
+" Enable spell checking for various file formats
 autocmd FileType gitcommit setlocal spell
 autocmd FileType tex setlocal spell
 autocmd FileType rst setlocal spell

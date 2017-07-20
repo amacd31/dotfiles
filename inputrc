@@ -1,2 +1,5 @@
+# Allow for searching backwards/forwards through shell history
+# using up/down for matches with partially typed commands. Similar
+# to ipython shell behaviour
 "\e[A": history-search-backward
 "\e[B": history-search-forward
