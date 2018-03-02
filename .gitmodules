@@ -17,7 +17,7 @@
 	path = vim/bundle/neomake
 	url = git@github.com:neomake/neomake.git
 [submodule "vim/bundle/rust.vim"]
-	path = vim/bundle/rust.vim
+	path = vim/bundle/rust-vim/
 	url = https://github.com/rust-lang/rust.vim.git
 [submodule "vim/bundle/vim-markdown"]
 	path = vim/bundle/vim-markdown
