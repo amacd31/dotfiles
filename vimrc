@@ -59,3 +59,5 @@ autocmd FileType gitcommit setlocal spell
 autocmd FileType tex setlocal spell
 autocmd FileType rst setlocal spell
 autocmd FileType md setlocal spell
+
+set colorcolumn=80,120 " Vertical bar at 80 and 120 chars
