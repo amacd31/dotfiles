@@ -61,3 +61,5 @@ alias wow='git status'
 alias boop="touch"
 
 alias ll="ls -lGh"
+
+export GPG_TTY=$(tty)
