@@ -22,6 +22,10 @@ inoremap <Tab> <C-T>
 inoremap <S-Tab> <C-D>
 " [<Ctrl>+V <Tab> still inserts an actual tab character.]
 
+" Map jj to Esc so touch tying the Esc on a Macbook pro is easier to do
+" (avoids trying to hit the touch bar without a physical escape key)
+imap jj <Esc>
+
 set list listchars=tab:>-,trail:.
 
 set t_Co=256
