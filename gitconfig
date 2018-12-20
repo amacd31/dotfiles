@@ -11,6 +11,7 @@
     dc = diff --cached
     wdiff = diff --color-words
     pdiff = diff --patience
+    praise = blame
 [merge]
     tool = vimdiff
 [achievement]

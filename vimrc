@@ -67,3 +67,5 @@ if has('nvim')
     " Live display search/replace
     set inccommand=nosplit
 endif
+
+command Gpraise Gblame
