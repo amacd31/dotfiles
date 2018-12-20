@@ -59,3 +59,5 @@ alias wow='git status'
 
 # https://mastodon.social/@LottieVixen/8499030
 alias boop="touch"
+
+alias ll="ls -lGh"
