@@ -13,6 +13,11 @@ if [ -f ~/.local_bash_profile ]; then
 	. ~/.local_bash_profile
 fi
 
+# Requires `sudo dnf install xorg-x11-drv-wacom`
+function wacom() {
+    xsetwacom set "Wacom Intuos PT S 2 Pen stylus" MapToOutput DVI-1
+}
+
 # used to refresh ssh connection for tmux
 # http://justinchouinard.com/blog/2010/04/10/fix-stale-ssh-environment-variables-in-gnu-screen-and-tmux/
 function r() {
