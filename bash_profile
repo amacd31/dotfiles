@@ -34,8 +34,12 @@ function r() {
 parse_git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
 }
+
+get_conda_env_name() {
+    env | grep CONDA_DEFAULT_ENV | sed 's/CONDA_DEFAULT_ENV=//'
+}
 # Set shell prompt to list current git branch
-PS1="╭─[\u@\h \[$(tput bold)\]\[$(tput setaf 4)\]\W\[$(tput setaf 2)\]\$(parse_git_branch)\[$(tput sgr0)\]]\n╰─\$ "
+PS1="╭─[(\$(get_conda_env_name)) \d \t \W \u@\h \[$(tput bold)\]\[$(tput setaf 4)\]\W\[$(tput setaf 2)\]\$(parse_git_branch)\[$(tput sgr0)\]]\n╰─\$ "
 
 # User specific environment and startup programs
 # For personally compiled binaries
