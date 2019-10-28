@@ -31,3 +31,6 @@
 [submodule "vim/bundle/ale"]
 	path = vim/bundle/ale
 	url = git@github.com:w0rp/ale.git
+[submodule "vim/bundle/vim-black"]
+	path = vim/bundle/vim-black
+	url = https://github.com/psf/black.git
