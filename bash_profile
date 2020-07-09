@@ -69,6 +69,10 @@ alias wow='git status'
 # https://mastodon.social/@LottieVixen/8499030
 alias boop="touch"
 
-alias ll="ls -lGh"
+if command -v exa >/dev/null 2>&1; then
+    alias ll="exa -l --git"
+else
+    alias ll="ls -lGh"
+fi
 
 export GPG_TTY=$(tty)
