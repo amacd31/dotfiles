@@ -34,3 +34,6 @@
 [submodule "vim/bundle/vim-black"]
 	path = vim/bundle/vim-black
 	url = https://github.com/psf/black.git
+[submodule "ohmyzsh"]
+	path = oh-my-zsh
+	url = https://github.com/ohmyzsh/ohmyzsh.git
