@@ -17,3 +17,5 @@
     tool = vimdiff
 [achievement]
     autocommit = true
+[commit]
+    verbose = true
