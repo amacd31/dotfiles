@@ -21,3 +21,5 @@
     verbose = true
 [diff]
     colorMoved = plain
+[pull]
+	rebase = true
