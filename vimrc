@@ -72,4 +72,9 @@ if has('nvim')
     set inccommand=nosplit
 endif
 
+" vim-go
+if executable("goimports")
+  let g:go_fmt_command = "goimports"
+endif
+
 command Gpraise Gblame
