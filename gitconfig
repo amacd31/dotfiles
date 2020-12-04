@@ -10,6 +10,7 @@
     st = status
     dc = diff --cached
     wdiff = diff --color-words
+    csvdiff = diff --color-words --ignore-space-at-eol --word-diff-regex="[^[:space:],]+"
     pdiff = diff --patience
     praise = blame
 [merge]
