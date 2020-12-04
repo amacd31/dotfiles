@@ -78,3 +78,13 @@ else
 fi
 
 export GPG_TTY=$(tty)
+
+git-branch-deleted-merged () {
+    git branch --merged | grep -vw master
+    echo -n "Delete branches [Y/n]? "
+    read answer
+    case $answer in
+            ([Yy]* | "") git branch --merged | grep -vw master | xargs git branch -d ;;
+            (*) return ;;
+    esac
+}
