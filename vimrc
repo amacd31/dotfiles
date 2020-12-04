@@ -16,6 +16,10 @@ filetype plugin indent on " load filetype plugins and indent settings
 " Turn syntax highlighting on
 syntax on
 
+set linebreak   " Avoid line-wrapping in the middle of a word.
+set breakindent " Hanging indent soft-wrap ...
+set sbr=↪\      " ... prefixed by an arrow, and a space (to make it match 2-space indent).
+
 " have <Tab> (and <Shift>+<Tab> where it works) change the level of
 " indentation:
 inoremap <Tab> <C-T>
