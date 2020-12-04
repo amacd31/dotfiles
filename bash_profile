@@ -88,3 +88,5 @@ git-branch-deleted-merged () {
             (*) return ;;
     esac
 }
+
+export EDITOR=nvim
