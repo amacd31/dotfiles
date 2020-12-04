@@ -66,6 +66,8 @@ alias very=git
 alias much=git
 alias wow='git status'
 
+alias ?='git status'
+
 # https://mastodon.social/@LottieVixen/8499030
 alias boop="touch"
 
