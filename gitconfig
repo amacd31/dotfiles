@@ -19,3 +19,5 @@
     autocommit = true
 [commit]
     verbose = true
+[diff]
+    colorMoved = plain
